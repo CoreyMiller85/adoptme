@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Results from "./Results";
 import useBreedList from "./useBreedList";
+
 const ANIMALS = ["Bird", "Cat", "Dog", "Reptile", "Rabbit"];
 
 const SearchParams = () => {
@@ -72,7 +73,7 @@ const SearchParams = () => {
         </label>
         <button>Submit</button>
       </form>
-      <Results pet={pets} />
+      <Results pets={pets} />
     </div>
   );
 };
